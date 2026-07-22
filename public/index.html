@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpellFlip: Medieval Coin Toss</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="snow"></div>
+    <div id="game-container">
+        <!-- Screen 1: Loader -->
+        <div id="screen-loader" class="screen active">
+            <h1 class="glow-text title">SpellFlip</h1>
+            <p>Summoning the spirits...</p>
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Screen 2: What are you tossing for? -->
+        <div id="screen-setup-1" class="screen">
+            <h2>What are you tossing for?</h2>
+            <div class="input-group">
+                <label for="heads-input">Heads represents:</label>
+                <input type="text" id="heads-input" placeholder="e.g. Journey to the East" required>
+            </div>
+            <div class="input-group">
+                <label for="tails-input">Tails represents:</label>
+                <input type="text" id="tails-input" placeholder="e.g. Defend the Castle" required>
+            </div>
+            <button id="btn-toss" class="medieval-btn">Toss</button>
+        </div>
+
+        <!-- Screen 3: How many tosses? -->
+        <div id="screen-setup-2" class="screen">
+            <h2>How many tosses do you wish to play?</h2>
+            <p class="subtitle">(Only odd numbers are favored by the fates)</p>
+            <div class="input-group">
+                <input type="number" id="tosses-input" min="1" step="2" value="3" required>
+            </div>
+            <button id="btn-lets-toss" class="medieval-btn">Let's Toss</button>
+        </div>
+
+        <!-- Screen 4: Coin Tossing & Result -->
+        <div id="screen-toss" class="screen">
+            <h3 id="tosses-left">Tosses left: <span id="toss-count"></span></h3>
+            
+            <div class="coin-container">
+                <div class="coin" id="coin">
+                    <div class="coin-face heads-face">Heads</div>
+                    <div class="coin-face tails-face">Tails</div>
+                </div>
+            </div>
+
+            <div id="toss-result-text" class="hidden">
+                <h2 id="current-toss-winner"></h2>
+                <button id="btn-toss-again" class="medieval-btn">Toss Again!</button>
+                <button id="btn-finish-toss" class="medieval-btn hidden">Reveal Fate</button>
+            </div>
+        </div>
+
+        <!-- Screen 5: Final Result & Gemini Note -->
+        <div id="screen-final" class="screen scroll">
+            <h2>The Fates Have Spoken</h2>
+            <div class="final-score">
+                <p>Heads (<span id="final-heads-label"></span>): <span id="score-heads">0</span></p>
+                <p>Tails (<span id="final-tails-label"></span>): <span id="score-tails">0</span></p>
+            </div>
+            <h3 id="ultimate-winner" class="glow-text"></h3>
+            
+            <div class="magician-note-container">
+                <div id="note-loader">The Magician is writing your fate...</div>
+                <p id="magician-note" class="hidden"></p>
+            </div>
+
+            <button id="btn-restart" class="medieval-btn">Begin Anew</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
