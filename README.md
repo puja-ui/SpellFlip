@@ -3,6 +3,8 @@
 
 A medieval-themed, AI-powered coin toss application that dynamically generates poetic prophecies based on your gameplay using the Gemini API.
 
+https://github.com/user-attachments/assets/4d3d9970-e5a1-414a-8521-5396bb3761e7
+
 ## The problem this solves
 Sometimes you need to make a tough decision—like whether to "Journey to the East" or "Defend the Castle". A standard coin flip gives you a binary answer, but it lacks flair. SpellFlip turns a simple coin toss into an immersive, atmospheric experience. By feeding the outcome of your tosses into a generative AI model, it acts as a digital seer, providing customized, narrative-driven prophecies that make your decisions feel legendary.
 
