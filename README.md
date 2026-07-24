@@ -3,6 +3,7 @@
 
 A medieval-themed, AI-powered coin toss application that dynamically generates poetic prophecies based on your gameplay using the Gemini API.
 **[🚀 Try it live here!](https://spell-flip.vercel.app/)**
+
 https://github.com/user-attachments/assets/4d3d9970-e5a1-414a-8521-5396bb3761e7
 
 ## The problem this solves
