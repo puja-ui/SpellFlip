@@ -23,7 +23,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--bg-dark);
-    background-image: url('bg-castle.png');
+    background-image: url('assets/bg-castle.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -194,13 +194,13 @@ input:focus {
 }
 
 .heads-face {
-    background: url('coin.png') no-repeat center center;
+    background: url('assets/coin.png') no-repeat center center;
     background-size: cover;
     color: transparent; /* hide text since we have an image */
 }
 
 .tails-face {
-    background: url('coin.png') no-repeat center center;
+    background: url('assets/coin.png') no-repeat center center;
     background-size: cover;
     filter: grayscale(100%);
     color: transparent;

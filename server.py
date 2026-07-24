@@ -2,7 +2,7 @@ import http.server
 import socketserver
 import json
 import os
-from utils import load_env, get_prompt_template, generate_gemini_note
+from lib.utils import load_env, get_prompt_template, generate_gemini_note
 
 # Load environment variables from .env
 load_env()
