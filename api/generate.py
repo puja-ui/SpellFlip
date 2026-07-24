@@ -3,9 +3,8 @@ import json
 import sys
 import os
 
-# Ensure the parent directory is in the path to import lib
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from lib.utils import get_prompt_template, generate_gemini_note
+# Use relative import for the utils file in the same directory
+from ._utils import get_prompt_template, generate_gemini_note
 
 class handler(BaseHTTPRequestHandler):
     def do_POST(self):
